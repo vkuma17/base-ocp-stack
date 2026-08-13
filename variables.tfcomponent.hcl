@@ -28,7 +28,7 @@ variable "vpc_id" {
 variable "ocp_version" {
   description = "The version of the OpenShift cluster to provision (format 4.x). If no value is specified, the current default version is used."
   type        = string
-  default     = null
+  default     = "default"
 }
 
 variable "resource_tags" {
@@ -46,5 +46,5 @@ variable "access_tags" {
 variable "ocp_entitlement" {
   description = "Value that is applied to the entitlements for OCP cluster provisioning."
   type        = string
-  default     = null
+  default     = "cloud_pak"
 }

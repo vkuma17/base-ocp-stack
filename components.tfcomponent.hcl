@@ -49,5 +49,7 @@ component "ocp_base" {
     kubernetes = provider.kubernetes.this
     time       = provider.time.this
     external   = provider.external.this
+    random     = provider.random.this
+    terraform  = provider.terraform.this
   }
 }

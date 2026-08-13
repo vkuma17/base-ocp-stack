@@ -19,6 +19,14 @@ required_providers {
     source  = "hashicorp/external"
     version = ">= 2.3.5, < 3.0.0"
   }
+  random = {
+    source  = "hashicorp/random"
+    version = ">= 3.6.0, < 4.0.0"
+  }
+}
+
+provider "terraform" "this" {
+  config {}
 }
 
 provider "ibm" "this" {
@@ -41,5 +49,9 @@ provider "time" "this" {
 }
 
 provider "external" "this" {
+  config {}
+}
+
+provider "random" "this" {
   config {}
 }
